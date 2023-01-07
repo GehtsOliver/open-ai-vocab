@@ -17,6 +17,7 @@ export default function Home() {
   const [vocab, setVocab] = useState("");
 
   const getCompletion = async () => {
+    console.log(configuration);
     const response = await openai.createCompletion({
       model: "text-davinci-001",
       prompt: `${prompt}`,

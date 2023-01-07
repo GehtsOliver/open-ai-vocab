@@ -7,7 +7,7 @@ const axios = require("axios");
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAIAPI_KEY,
+  apiKey: process.env.NEXT_PUBLIC_OPENAIAPI_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
